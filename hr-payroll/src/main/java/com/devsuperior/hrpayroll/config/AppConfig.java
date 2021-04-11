@@ -14,8 +14,8 @@ public class AppConfig {
     }
 
     @Bean
-    Logger.Level feignLoggerLevel() {
-        return Logger.Level.FULL;
+    public Logger.Level feignLoggerLevel() {
+        return Logger.Level.BASIC;
     }
 
 }
