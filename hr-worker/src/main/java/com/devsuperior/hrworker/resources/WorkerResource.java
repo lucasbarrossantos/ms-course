@@ -1,7 +1,6 @@
 package com.devsuperior.hrworker.resources;
 
 import com.devsuperior.hrworker.entities.Worker;
-import com.devsuperior.hrworker.repositories.WorkerRepository;
 import com.devsuperior.hrworker.servicies.WorkerService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
