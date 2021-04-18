@@ -1,4 +1,4 @@
-package com.devsuperior.hrworker.v1.adapter.http;
+package com.devsuperior.hrworker.v1.adapter.http.controller;
 
 import com.devsuperior.hrworker.v1.adapter.http.confg.DataArray;
 import com.devsuperior.hrworker.v1.adapter.http.confg.DataObject;
