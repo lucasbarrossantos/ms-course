@@ -1,7 +1,7 @@
-package com.devsuperior.hrworker.exceptionhandler;
+package com.devsuperior.hrworker.v1.adapter.http.exceptionhandler;
 
-import com.devsuperior.hrworker.servicies.exception.EntidadeNaoEncontradaException;
-import com.devsuperior.hrworker.servicies.exception.NegocioException;
+import com.devsuperior.hrworker.v1.core.servicies.exception.EntidadeNaoEncontradaException;
+import com.devsuperior.hrworker.v1.core.servicies.exception.NegocioException;
 import com.fasterxml.jackson.databind.exc.InvalidFormatException;
 import com.fasterxml.jackson.databind.exc.PropertyBindingException;
 import lombok.RequiredArgsConstructor;

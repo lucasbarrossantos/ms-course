@@ -1,4 +1,4 @@
-package com.devsuperior.hrworker.servicies.exception;
+package com.devsuperior.hrworker.v1.core.servicies.exception;
 
 public class WorkerNotFoundException extends EntidadeNaoEncontradaException {
 

@@ -1,4 +1,4 @@
-package com.devsuperior.hrworker.exceptionhandler;
+package com.devsuperior.hrworker.v1.adapter.http.exceptionhandler;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Builder;
