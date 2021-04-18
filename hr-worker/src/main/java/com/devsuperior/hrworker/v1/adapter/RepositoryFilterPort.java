@@ -2,7 +2,6 @@ package com.devsuperior.hrworker.v1.adapter;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.jpa.domain.Specification;
-import org.springframework.data.repository.NoRepositoryBean;
 
 import javax.persistence.EntityNotFoundException;
 import java.util.Collection;

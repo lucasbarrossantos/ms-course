@@ -1,7 +1,6 @@
 package com.devsuperior.hrworker.v1.adapter;
 
 import com.devsuperior.hrworker.v1.core.servicies.exception.NegocioException;
-import org.springframework.data.repository.NoRepositoryBean;
 
 import javax.persistence.EntityNotFoundException;
 import java.util.Collection;
