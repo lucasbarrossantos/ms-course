@@ -1,6 +1,7 @@
 package com.devsuperior.hroauth.config;
 
 import feign.Logger;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -10,6 +11,9 @@ import org.springframework.web.client.RestTemplate;
 
 @Configuration
 public class AppConfig {
+
+    @Value("${jwt.secret}")
+    private String secretJWT;
 
     @Bean
     public BCryptPasswordEncoder bCryptPasswordEncoder() {
@@ -29,7 +33,7 @@ public class AppConfig {
     @Bean
     public JwtAccessTokenConverter accessTokenConverter() {
         JwtAccessTokenConverter accessTokenConverter = new JwtAccessTokenConverter();
-        accessTokenConverter.setSigningKey("1234567890");
+        accessTokenConverter.setSigningKey(secretJWT);
         return accessTokenConverter;
     }
 
