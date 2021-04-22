@@ -11,7 +11,7 @@
     <groupId>com.devsuperior</groupId>
     <artifactId>hr-worker</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
     <name>hr-worker</name>
     <description>Worker Microservice</description>
     <properties>
@@ -92,6 +92,7 @@
     </dependencyManagement>
 
     <build>
+        <finalName>hr-worker</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
