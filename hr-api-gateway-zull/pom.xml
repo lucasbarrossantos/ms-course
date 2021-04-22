@@ -12,6 +12,7 @@
 	<artifactId>hr-api-gateway-zull</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>hr-api-gateway-zull</name>
+	<packaging>jar</packaging>
 	<description>Zull Server</description>
 	<properties>
 		<java.version>11</java.version>
@@ -71,6 +72,7 @@
 	</dependencyManagement>
 
 	<build>
+		<finalName>hr-api-gateway-zuul</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
