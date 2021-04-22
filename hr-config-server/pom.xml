@@ -48,6 +48,7 @@
 	</dependencyManagement>
 
 	<build>
+		<finalName>hr-config-server</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
