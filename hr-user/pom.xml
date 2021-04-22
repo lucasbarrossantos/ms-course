@@ -11,6 +11,7 @@
 	<groupId>com.devsuperior</groupId>
 	<artifactId>hr-user</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
 	<name>hr-user</name>
 	<description>User Microservice</description>
 	<properties>
@@ -83,6 +84,7 @@
 	</dependencyManagement>
 
 	<build>
+		<finalName>hr-user</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
