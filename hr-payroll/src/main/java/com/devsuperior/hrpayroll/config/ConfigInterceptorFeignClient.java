@@ -2,12 +2,13 @@ package com.devsuperior.hrpayroll.config;
 
 import feign.RequestInterceptor;
 import feign.RequestTemplate;
-import org.apache.catalina.connector.RequestFacade;
 import org.springframework.stereotype.Component;
-import org.springframework.web.context.request.RequestContextHolder;
-import org.springframework.web.context.request.ServletRequestAttributes;
 
-import javax.servlet.*;
+import javax.servlet.Filter;
+import javax.servlet.FilterChain;
+import javax.servlet.ServletException;
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 
@@ -19,13 +20,13 @@ public class ConfigInterceptorFeignClient implements RequestInterceptor, Filter 
 
     @Override
     public void apply(RequestTemplate requestTemplate) {
-        requestTemplate.header(AUTHORIZATION_HEADER, this.token);
+        requestTemplate.header(AUTHORIZATION_HEADER, token);
     }
 
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
         HttpServletRequest req = (HttpServletRequest) servletRequest;
-        this.token = req.getHeader("Authorization");
+        token = req.getHeader("Authorization");
         filterChain.doFilter(servletRequest, servletResponse);
     }
 }
