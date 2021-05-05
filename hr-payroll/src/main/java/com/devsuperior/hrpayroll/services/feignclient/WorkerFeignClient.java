@@ -1,6 +1,7 @@
 package com.devsuperior.hrpayroll.services.feignclient;
 
 import com.devsuperior.hrpayroll.config.AppConfig;
+import com.devsuperior.hrpayroll.config.http.DataObject;
 import com.devsuperior.hrpayroll.entities.Worker;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Component;
@@ -12,6 +13,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 public interface WorkerFeignClient {
 
     @GetMapping("/{id}")
-    Worker findById(@PathVariable Long id);
+    DataObject findById(@PathVariable Long id);
 
 }
